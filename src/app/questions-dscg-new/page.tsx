@@ -1,11 +1,11 @@
 'use client';
 
+import React, { useState } from 'react';
 import Link from 'next/link';
-import { useState } from 'react';
-import { ArrowLeft, BookOpen, Calendar, FileText, Users, Target, AlertTriangle, CheckCircle, Eye, EyeOff } from 'lucide-react';
+import { Eye, EyeOff, ArrowLeft, Calendar, FileText, BookOpen } from 'lucide-react';
 
-export default function QuestionsDSCGPage() {
-  const [visibleCorrections, setVisibleCorrections] = useState<{[key: string]: boolean}>({});
+export default function QuestionsDSCGNew() {
+  const [visibleCorrections, setVisibleCorrections] = useState<Record<string, boolean>>({});
 
   const toggleCorrection = (questionId: string) => {
     setVisibleCorrections(prev => ({
@@ -15,8 +15,8 @@ export default function QuestionsDSCGPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      <div className="container mx-auto px-4 py-8">
+    <div className="min-h-screen bg-gray-50 py-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-8">
           <Link 
@@ -24,7 +24,7 @@ export default function QuestionsDSCGPage() {
             className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-4 transition-colors"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Retour à l'accueil
+            Retour à l&apos;accueil
           </Link>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Questions DSCG : Suivi de Projet SI
@@ -44,12 +44,12 @@ export default function QuestionsDSCGPage() {
           <div className="prose max-w-none text-gray-700">
             <p className="mb-4">
               Ces questions sont tirées des annales DSCG et sont pertinentes par rapport aux concepts 
-              abordés dans le "CHAPITRE 13 : LE SUIVI D'UN PROJET SI" et la gestion de projet en général.
+              abordés dans le &quot;CHAPITRE 13 : LE SUIVI D&apos;UN PROJET SI&quot; et la gestion de projet en général.
             </p>
             <p className="text-sm text-gray-600">
-              <strong>Note :</strong> Le document "CHAPITRE-13-PROJET-SUIVI-OK.pdf" est un support de cours 
+              <strong>Note :</strong> Le document &quot;CHAPITRE-13-PROJET-SUIVI-OK.pdf&quot; est un support de cours 
               expliquant les notions de suivi de projet (coût, délai, qualité, risques), mais ne contient pas 
-              de questions d'examen. Les questions ci-dessous proviennent des annales de DSCG.
+              de questions d&apos;examen. Les questions ci-dessous proviennent des annales de DSCG.
             </p>
           </div>
         </div>
@@ -72,8 +72,8 @@ export default function QuestionsDSCGPage() {
             <div className="bg-blue-50 p-4 rounded-lg mb-4">
               <h4 className="font-semibold text-blue-900 mb-2">Question :</h4>
               <p className="text-blue-800">
-                « En ce qui concerne le troisième argument de H2O : caractérisez précisément ce risque et 
-                proposez des moyens de le gérer en détaillant votre réponse. »
+                &laquo; En ce qui concerne le troisième argument de H2O : caractérisez précisément ce risque et 
+                proposez des moyens de le gérer en détaillant votre réponse. &raquo;
               </p>
             </div>
 
@@ -99,25 +99,25 @@ export default function QuestionsDSCGPage() {
                 <h4 className="font-semibold text-green-900 mb-2">Correction :</h4>
                 <div className="text-green-800 space-y-3">
                   <p>
-                    Le risque est lié à une situation d'incertitude, à des imprévus ou des aléas. La réalisation 
+                    Le risque est lié à une situation d&apos;incertitude, à des imprévus ou des aléas. La réalisation 
                     des risques peut porter sur le processus (projet non abouti, consommation excessive de ressources, 
-                    durée trop longue) ou sur le résultat (système non fonctionnel, non accepté par l'utilisateur, 
+                    durée trop longue) ou sur le résultat (système non fonctionnel, non accepté par l&apos;utilisateur, 
                     coût de fonctionnement excessif).
                   </p>
                   <p>
                     La démarche générale de management des risques comprend cinq étapes : identifier les risques, 
                     évaluer leur impact possible sur les coûts, le délai et la qualité, définir des actions pour 
-                    réduire les risques inacceptables, suivre ces actions et surveiller l'état des risques, 
-                    et capitaliser l'expérience.
+                    réduire les risques inacceptables, suivre ces actions et surveiller l&apos;état des risques, 
+                    et capitaliser l&apos;expérience.
                   </p>
                   <p>
-                    Concernant l'argument "Enfin, ils mettent en avant le fait, que les employés et les clients 
-                    sont habitués à leur application, et qu'il sera très problématique de changer.", 
+                    Concernant l&apos;argument &quot;Enfin, ils mettent en avant le fait, que les employés et les clients 
+                    sont habitués à leur application, et qu&apos;il sera très problématique de changer.&quot;, 
                     les risques identifiés peuvent inclure :
                   </p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li><strong>Adhésion des employés :</strong> L'adhésion des employés est un point crucial qui fera échouer le projet s'il n'est pas pris en compte. Les salariés vont avoir à faire à des changements d'ordre.</li>
-                    <li><strong>Technologique :</strong> L'application va les obliger à passer par une interface nouvelle pour tout un tas d'activités. Ce changement sera important.</li>
+                    <li><strong>Adhésion des employés :</strong> L&apos;adhésion des employés est un point crucial qui fera échouer le projet s&apos;il n&apos;est pas pris en compte. Les salariés vont avoir à faire à des changements d&apos;ordre.</li>
+                    <li><strong>Technologique :</strong> L&apos;application va les obliger à passer par une interface nouvelle pour tout un tas d&apos;activités. Ce changement sera important.</li>
                     <li><strong>Organisationnel :</strong> Certains sont plus particulièrement touchés par ce changement organisationnel : leur rôles, métiers, tâches en seront affectés.</li>
                   </ul>
                   <p>
@@ -139,8 +139,8 @@ export default function QuestionsDSCGPage() {
             <div className="bg-blue-50 p-4 rounded-lg mb-4">
               <h4 className="font-semibold text-blue-900 mb-2">Question :</h4>
               <p className="text-blue-800">
-                « Vous relèverez les erreurs déjà commises en termes de gestion de projet par Etienne Dupond. 
-                Vous structurerez votre réponse autour des grandes phases de la gestion de projet informatique. »
+                &laquo; Vous relèverez les erreurs déjà commises en termes de gestion de projet par Etienne Dupond. 
+                Vous structurerez votre réponse autour des grandes phases de la gestion de projet informatique. &raquo;
               </p>
             </div>
 
@@ -171,7 +171,7 @@ export default function QuestionsDSCGPage() {
                   <div className="space-y-4">
                     <div>
                       <h5 className="font-semibold">Phases Préliminaires :</h5>
-                      <p>Erreur signalée comme "OK-RAS" (Okay - Rien à signaler).</p>
+                      <p>Erreur signalée comme &quot;OK-RAS&quot; (Okay - Rien à signaler).</p>
                     </div>
                     <div>
                       <h5 className="font-semibold">Phase Lancement du projet / Définition projet :</h5>
@@ -179,11 +179,11 @@ export default function QuestionsDSCGPage() {
                     </div>
                     <div>
                       <h5 className="font-semibold">Phase Expression du besoin :</h5>
-                      <p>Les fonctionnalités précises à développer n'ont pas été identifiées trop en amont.</p>
+                      <p>Les fonctionnalités précises à développer n&apos;ont pas été identifiées trop en amont.</p>
                     </div>
                     <div>
                       <h5 className="font-semibold">Phase Planification :</h5>
-                      <p>L'absence de mise en place d'outil de gestion de projet PERT/GANTT, le fait que le chef de projet ne tienne pas son rôle (pas de contrôle, aucune relation avec le futur utilisateur) sont des erreurs.</p>
+                      <p>L&apos;absence de mise en place d&apos;outil de gestion de projet PERT/GANTT, le fait que le chef de projet ne tienne pas son rôle (pas de contrôle, aucune relation avec le futur utilisateur) sont des erreurs.</p>
                     </div>
                   </div>
                 </div>
