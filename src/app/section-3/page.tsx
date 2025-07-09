@@ -280,12 +280,12 @@ export default function Section3() {
 
             <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 mb-6">
               <h3 className="text-xl font-semibold text-orange-800 mb-4">🔧 Axe de Maintenance</h3>
-              <p className="text-gray-700 mb-4">Facilité de maintenance et d'évolution du logiciel.</p>
+              <p className="text-gray-700 mb-4">Facilité de maintenance et d&apos;évolution du logiciel.</p>
               
               <div className="space-y-4">
                 <div className="bg-white rounded-lg p-4">
                   <h4 className="font-semibold text-orange-700 mb-3">🔍 Analysabilité (Analyzability)</h4>
-                  <p className="text-gray-700 mb-2">Facilité d'analyse du code pour identifier les causes de défaillances ou les parties à modifier.</p>
+                  <p className="text-gray-700 mb-2">Facilité d&apos;analyse du code pour identifier les causes de défaillances ou les parties à modifier.</p>
                   <div className="bg-orange-50 p-3 rounded text-sm">
                     <p className="text-orange-800"><strong>Exemple :</strong> Code bien documenté, architecture claire, logs détaillés, outils de debugging.</p>
                   </div>
@@ -293,7 +293,7 @@ export default function Section3() {
                 
                 <div className="bg-white rounded-lg p-4">
                   <h4 className="font-semibold text-orange-700 mb-3">🛠️ Modifiabilité (Changeability)</h4>
-                  <p className="text-gray-700 mb-2">Facilité d'implémentation des modifications, corrections ou améliorations.</p>
+                  <p className="text-gray-700 mb-2">Facilité d&apos;implémentation des modifications, corrections ou améliorations.</p>
                   <div className="bg-orange-50 p-3 rounded text-sm">
                     <p className="text-orange-800"><strong>Exemple :</strong> Code modulaire, faible couplage, respect des patterns de conception.</p>
                   </div>
@@ -317,7 +317,7 @@ export default function Section3() {
                 
                 <div className="bg-white rounded-lg p-4">
                   <h4 className="font-semibold text-orange-700 mb-3">📦 Portabilité (Portability)</h4>
-                  <p className="text-gray-700 mb-2">Facilité de transfert du logiciel d'un environnement à un autre.</p>
+                  <p className="text-gray-700 mb-2">Facilité de transfert du logiciel d&apos;un environnement à un autre.</p>
                   <div className="bg-orange-50 p-3 rounded text-sm">
                     <p className="text-orange-800"><strong>Exemple :</strong> Compatibilité multi-plateforme, standards ouverts, configuration externalisée.</p>
                   </div>
