@@ -96,34 +96,34 @@ export default function SectionBlock({ title, description, href, icon, color }: 
       <Link href={href}>
         <div className={`
           ${colors.bg} ${colors.border} ${colors.hover}
-          border-2 rounded-xl p-6 
+          border-2 rounded-xl p-4 sm:p-6 
           hover:shadow-lg transition-all duration-200
           cursor-pointer group
         `}>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0">
+            <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">
               {/* Icône */}
-              <div className={`${colors.iconBg} p-3 rounded-full`}>
-                <IconComponent className={`h-6 w-6 ${colors.iconColor}`} />
+              <div className={`${colors.iconBg} p-2.5 sm:p-3 rounded-full flex-shrink-0`}>
+                <IconComponent className={`h-5 w-5 sm:h-6 sm:w-6 ${colors.iconColor}`} />
               </div>
               
               {/* Contenu */}
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-1">
+              <div className="flex-1 min-w-0">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1">
                   {title}
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
                   {description}
                 </p>
               </div>
             </div>
             
             {/* Bouton */}
-            <div className="flex items-center gap-2">
-              <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors">
+            <div className="flex items-center gap-2 self-end sm:self-auto mt-2 sm:mt-0">
+              <span className="text-xs sm:text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors">
                 Commencer
               </span>
-              <ArrowRight className="h-4 w-4 text-gray-400 group-hover:text-gray-600 group-hover:translate-x-1 transition-all" />
+              <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-gray-400 group-hover:text-gray-600 group-hover:translate-x-1 transition-all" />
             </div>
           </div>
         </div>

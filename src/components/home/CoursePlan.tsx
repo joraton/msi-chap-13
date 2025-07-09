@@ -3,16 +3,16 @@ import SectionBlock from './SectionBlock';
 
 export default function CoursePlan() {
   return (
-    <div className="bg-white rounded-2xl p-8 shadow-lg">
+    <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg">
       {/* Titre de la section */}
-      <div className="text-center mb-8">
-        <div className="flex items-center justify-center gap-3 mb-4">
-          <div className="bg-blue-100 p-3 rounded-full">
-            <Target className="h-6 w-6 text-blue-600" />
+      <div className="text-center mb-6 sm:mb-8">
+        <div className="flex items-center justify-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+          <div className="bg-blue-100 p-2 sm:p-3 rounded-full">
+            <Target className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600" />
           </div>
-          <h2 className="text-2xl font-bold text-gray-900">Plan du cours</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Plan du cours</h2>
         </div>
-        <p className="text-gray-600 text-lg">
+        <p className="text-gray-600 text-sm sm:text-base lg:text-lg px-2 sm:px-0">
           Suivez le parcours structuré pour maîtriser le suivi de projet SI
         </p>
       </div>
