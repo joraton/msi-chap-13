@@ -303,7 +303,7 @@ export default function Section3() {
                   <h4 className="font-semibold text-orange-700 mb-3">🧪 Testabilité (Testability)</h4>
                   <p className="text-gray-700 mb-2">Facilité de validation des modifications apportées au logiciel.</p>
                   <div className="bg-orange-50 p-3 rounded text-sm">
-                    <p className="text-orange-800"><strong>Exemple :</strong> Tests unitaires, tests d'intégration, couverture de code, environnements de test.</p>
+                    <p className="text-orange-800"><strong>Exemple :</strong> Tests unitaires, tests d&apos;intégration, couverture de code, environnements de test.</p>
                   </div>
                 </div>
                 
